@@ -1,6 +1,5 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-    }
+mod map;
+
+fn main() {
+    println!("Hello, world!")
 }
