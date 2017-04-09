@@ -1,5 +1,3 @@
-use std;
-
 pub struct Coordinate {
     pub x: i32,
     pub y: i32
@@ -40,6 +38,8 @@ mod test {
 
         assert_eq!(c1.get_distance(&c2), 15);
         assert_eq!(c2.get_distance(&c1), 15);
-
+        let second_dist = c3.get_distance(&c4);
+        assert_eq!(second_dist, 199);
+        assert_eq!(second_dist, c4.get_distance(&c3));
     }
 }
